@@ -51,7 +51,7 @@ common_settings:
   # and therefore the latest NPM at all times.
   install_latest_npm: &install_latest_npm
     name: Ensure NPM is up to date
-    command: sudo npm install -g npm@latest
+    command: sudo npm install -g npm@latest && touch package.json
 
   # Greenkeeper Lockfile should run before `npm install` runs locally, so
   # we need to install it globally.
@@ -81,7 +81,7 @@ jobs:
       - run: *install_greenkeeper_lockfile
       - run:
           name: Greenkeeper Lockfile update on Greenkeeper branches
-          command: greenkeeper-lockfile-update && touch package.json
+          command: greenkeeper-lockfile-update 
       - save_cache: *savecache
   master:
     docker: *docker_setup
