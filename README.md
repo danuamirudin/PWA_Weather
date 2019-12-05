@@ -1,0 +1,1 @@
+PWA simple app
