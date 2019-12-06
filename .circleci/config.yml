@@ -3,8 +3,7 @@ workflows:
   version: 3
   build-deploy:
     jobs:
-      # Greenkeeper Lockfile updates package-lock.json in branches created by
-      # greenkeeper-bot. It uses internal logic (currently a branchname prefix)
+     
       # to determine which branches to run on, so rather than duplicate that
       # logic in CircleCI config, we just run greenkeeper-lockfile on every
       # branch before running the rest of the CI process.
