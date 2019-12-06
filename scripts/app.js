@@ -294,7 +294,7 @@
    */
   var initialWeatherForecast = {
     key: '2459115',
-    label: 'Yogyakarta, Infosys',
+    label: 'Yogyakarta, Infosys Yogya',
     created: 'Fri Dec  6 11:32:55 UTC 2019',
     channel: {
       astronomy: {
