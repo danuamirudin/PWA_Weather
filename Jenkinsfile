@@ -2,10 +2,10 @@ pipeline {
     agent any 
 
     stages {
-        stage('checkout') {
+        stage('start') {
             agent any 
             steps {
-                chekout scm
+                echo 'BISMILLAH'
             }
         }
 
