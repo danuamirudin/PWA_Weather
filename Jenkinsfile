@@ -12,7 +12,7 @@ pipeline {
          stage ('clean') {
             agent any
             steps {
-                sh 'rm -rf /var/www/html/pwa/tugas'
+                sh 'rm -rf /var/www/html/pwa/'
             }
         }
 
