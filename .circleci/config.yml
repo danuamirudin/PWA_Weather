@@ -4,7 +4,7 @@ workflows:
   build-deploy:
     jobs:
      
-      # to determine which branches to run on, so rather than duplicate that
+     
       # logic in CircleCI config, we just run greenkeeper-lockfile on every
       # branch before running the rest of the CI process.
       # On most branches, it will be a no-op.
