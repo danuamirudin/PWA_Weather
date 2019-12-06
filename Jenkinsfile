@@ -17,7 +17,7 @@ pipeline {
         stage ('Deploy') {
             agent any
             steps {
-                sh 'mv PWA_Weather /var/www/html/pwa'
+                sh 'mv /var/lib/jenkins/workspace/tugas /var/www/html/pwa'
             }
         }
     }
