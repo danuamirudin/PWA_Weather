@@ -294,17 +294,17 @@
    */
   var initialWeatherForecast = {
     key: '2459115',
-    label: 'New York, NY',
-    created: '2016-07-22T01:00:00Z',
+    label: 'Yogyakarta, Infosys',
+    created: 'Fri Dec  6 11:32:55 UTC 2019',
     channel: {
       astronomy: {
         sunrise: "5:43 am",
-        sunset: "8:21 pm"
+        sunset: "17:21 pm"
       },
       item: {
         condition: {
           text: "Windy",
-          date: "Thu, 21 Jul 2016 09:00 PM EDT",
+          date: "Fri Dec  6 11:32:55 UTC 2019",
           temp: 56,
           code: 24
         },
