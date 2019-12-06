@@ -1,6 +1,6 @@
 version: 3
 workflows:
-  version: 2
+  version: 3
   build-deploy:
     jobs:
       # Greenkeeper Lockfile updates package-lock.json in branches created by
