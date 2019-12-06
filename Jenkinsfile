@@ -2,22 +2,24 @@ pipeline {
     agent any 
 
     stages {
-        stage('Build Assets') {
+        stage('checkout') {
             agent any 
             steps {
-                echo 'Building Assets...'
+                chekout scm
             }
         }
-        stage('Test') {
-            agent any
-            steps {
-                echo 'Testing stuff...'
-            }
-        }
+
          stage ('clean') {
             agent any
             steps {
                 sh 'rm -rf /var/www/html/pwa/tugas'
+            }
+        }
+
+        stage('verification') {
+            agent any
+            steps {
+                sh 'ls /var/www/html/pwa'
             }
         }
         stage ('Deploy') {
