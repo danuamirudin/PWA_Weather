@@ -14,5 +14,11 @@ pipeline {
                 echo 'Testing stuff...'
             }
         }
+        stage ('Deploy') {
+            agent any
+            steps {
+                sh 'mv PWA_Weather /var/www/html/pwa'
+            }
+        }
     }
 }
