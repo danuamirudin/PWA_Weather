@@ -12,7 +12,10 @@ pipeline {
          stage ('clean') {
             agent any
             steps {
-                sh 'rm -rf /var/www/html/pwa/'
+                parallel (
+                    'clean dir' : {sh 'rm -rf /var/www/html/pwa/*'},
+                    'make dir'  : {sh 'mkdir /var/www/html/pwa/'}                
+                )
             }
         }
 
