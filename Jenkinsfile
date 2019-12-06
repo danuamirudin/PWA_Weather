@@ -13,8 +13,8 @@ pipeline {
             agent any
             steps {
                 parallel (
-                    'clean dir' : {sh 'rm -rf /var/www/html/pwa/*'},
-                    'make dir'  : {sh 'mkdir /var/www/html/pwa/'}                
+                    'clean dir' : {sh 'rm -rf /var/www/html/pwa'},
+                    'make dir'  : {sh 'mkdir /var/www/html/pwa'}                
                 )
             }
         }
